@@ -27,7 +27,7 @@ namespace DBSAPI.Controllers
         [HttpGet]
         public List<Customer> GetCustomers()
         {
-
+            //To get all customer names
             return _provider.GetCustomers();
         }
 
