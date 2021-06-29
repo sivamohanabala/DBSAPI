@@ -31,5 +31,28 @@ namespace DBSAPI.Model
         public string UserType { get; set; }
 
         public bool IsVerified { get; set; }
+        public Customer()
+        {
+        }
+
+        //public Product(string PrdName, int Qty, float prc)
+        //{
+        //    ProcuctName = PrdName;
+        //    QtyOnHand = Qty;
+        //    price = prc;
+
+        //}
+        public Customer(int id, string CName, string UName,string pwd,int cage,string Mobile,string Addres,string UserTyp ,bool verify)
+        {
+           UserId = id;
+            Name = CName;
+           UserName = UName;
+            Password = pwd;
+            Age = cage;
+            Phone = Mobile;
+            Address = Addres;
+            UserType = UserTyp;
+            IsVerified = verify;
+        }
     }
 }

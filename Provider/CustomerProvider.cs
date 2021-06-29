@@ -29,7 +29,7 @@ namespace DBSAPI.Provider
         public bool CustomerExists(int id)
         {
             bool res = _repo.CustomerExists(id);
-            return res;
+            return true;
         }
 
         public void DeleteCustomer(int id)
